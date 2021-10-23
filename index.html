@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200&family=Sora:wght@200&display=swap" rel="stylesheet"> 
+  
+  
+  <script src="index.js"></script>
+   <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <div><input type="text" id="search" placeholder="Search Projects" oninput="changeTable('search')"></div>
+        <div><button id="search_button" onclick="addUser1()">Add User</button></div>
+      </div>
+        <div class="users_info">
+            <table class="table_users">
+                <tr>
+                    <th>#</th>
+                    <th>Projects</th>
+                    <th>Start Date</th>
+                    <th>Status</th>
+                    <th>Team</th>
+                    <th>Progress</th>
+                    <th>Action</th>
+                </tr>
+                
+
+            </table>
+
+        </div>
+
+    </div>
+    <div id="myModal1">
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="close" class="close">&times;</span>
+          
+          
+          <div id="form_user1">
+           
+             <div id="input_forms1"> 
+              <form onsubmit="changeRow(event)"> 
+              <div> <input type="text" id='projects' required placeholder="Enter Project Name"></div>
+              <div><input type="date" id='start_date'  required placeholder="Enter Start Date"></div>
+              <div><input type="text" id='status' required  placeholder="Enter Status"></div>
+              <div> <input type="number" max="100" id='progress' required  placeholder="Enter Progress"></div>
+              <div  id="only1"><input id="on1"  type="submit" value="Change" ></div>
+              </form>
+     </div>
+     </div>
+     <div>
+      <!-- <button  onclick="changeRow()" >Change</button> -->
+      
+    </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!-- <input type="text" id='id'  placeholder="Enter Project Name"><br>
+          <input type="text" id='projects'  placeholder="Enter Start Date"><br>
+          <input type="text" id='start_date'  placeholder="Enter Start Date"><br>
+          <input type="text" id='status'  placeholder="Enter Status"><br>
+          <input type="text" id='progress'  placeholder="Enter Progress"><br>
+          <button onclick="changeRow()"></button> -->
+        </div>
+      
+      </div>
+    </div>
+    <div id="modalForUser">
+      <div id="modal_user" class="modal_user">
+  
+          <!-- Modal content -->
+          <div class="modal_user_content">
+            <span id="close1" class="close1">&times;</span>
+            <p>Enter User Details</p>
+            <div id="form_user">
+         <div id="input_texts">
+           <div>Enter Project Name</div>
+           <div>Enter Start Date </div>
+           <div>Enter Status</div>
+           <div>Enter Progress</div>
+          </div>
+          <div id="input_forms"> 
+            <form onsubmit="addUserDetails(event)"> 
+           <div> <input type="text" id='projects_d' required placeholder="Enter Project Name"></div>
+          <div><input type="date" id='start_date_d'  required placeholder="Enter Start Date"></div>
+           <div><input type="text" id='status_d' required  placeholder="Enter Status"></div>
+           <div> <input type="number" max="100" id='progress_d' required  placeholder="Enter Progress"></div>
+           <div  id="only"><input id="on"  type="submit" value="Add User detail" ></div>
+           </form>
+  </div>
+  </div>
+  
+
+          </div>
+        
+        </div>
+      </div>
+</body>
+</html>
