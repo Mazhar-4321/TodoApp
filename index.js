@@ -581,7 +581,21 @@ function changeRow(event)
      table_row.children[3].innerText=document.getElementById("status").value;
     // table_row.children[5].innerText=document.getElementById("progress").value;
      table_row.children[5].children[0].children[0]
-
+    if(document.getElementById("status").value=="Completed")
+     {
+       var div=table_row.children[3];
+       
+      // console.log("pa")
+      div.style=" color:green ;"
+      //console.log(div);
+     }
+     else
+     {
+      var div=table_row.children[3];
+      div.style="color:blue" ;
+     // console.log(div);
+     
+     }
     // var td5=  document.createElement("td");
      //var divv=document.createElement("div");
      var color_pallete="blue";
