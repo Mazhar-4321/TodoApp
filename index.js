@@ -399,6 +399,14 @@ function addUserWithDetails(p_id,p_projects,p_start_date,p_status,p_teams,p_prog
   var td3=  document.createElement("td");
   td3.innerText= p_status;
   td3.id=date_time+"_status"
+  if(p_status=="Completed")
+  {
+    td3.style="color:green";
+  }
+  else
+  {
+    td3.style="color:blue";
+  }
   tr.appendChild(td3);
   var td4=  document.createElement("td");
   var avatarDiv=document.createElement("div");
